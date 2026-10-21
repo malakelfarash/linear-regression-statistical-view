@@ -123,8 +123,7 @@ pip install numpy scipy pandas statsmodels jupyter
 Then clone the repo:
 
 ```bash
-git clone https://github.com/<your-username>/linear-regression-statistical-view.git
-cd linear-regression-statistical-view
+git clone https://github.com/YourUsername/linear-regression-statistical-view.git
 ```
 
 ### Run the notebook
