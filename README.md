@@ -66,7 +66,7 @@ R-squared       0.337645      0.337645      Passed
 ...
 ```
 
-> `statsmodels` is used **only** to verify the from-scratch implementation; the core module has zero dependency on it.
+> `statsmodels` is used **only** to verify the from-scratch implementation, the core module has zero dependency on it.
 
 ## Public API
 
