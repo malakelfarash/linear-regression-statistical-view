@@ -1,4 +1,4 @@
-# Linear Regression — Statistical View (Python)
+# Linear Regression: Statistical View (Python)
 
 A from-scratch implementation of **simple linear regression** with full statistical inference, written in pure NumPy/SciPy. This project computes regression coefficients, ANOVA-based F-statistics, t-based confidence intervals, and R² without relying on `scikit-learn` or `statsmodels` — and then **proves its correctness** by cross-validating every metric against `statsmodels.OLS`.
 
