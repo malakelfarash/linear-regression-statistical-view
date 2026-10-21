@@ -1,6 +1,6 @@
 # Linear Regression: Statistical View (Python)
 
-A from-scratch implementation of **simple linear regression** with full statistical inference, written in pure NumPy/SciPy. This project computes regression coefficients, ANOVA-based F-statistics, t-based confidence intervals, and R² without relying on `scikit-learn` or `statsmodels` — and then **proves its correctness** by cross-validating every metric against `statsmodels.OLS`.
+A from-scratch implementation of **simple linear regression** with full statistical inference, written in pure NumPy/SciPy. This project computes regression coefficients, ANOVA-based F-statistics, t-based confidence intervals, and R² without relying on `scikit-learn` or `statsmodels` and then **proves its correctness** by cross-validating every metric against `statsmodels.OLS`.
 
 ## Overview
 
@@ -21,7 +21,7 @@ The hypothesis tested throughout is:
 
 ## Dataset
 
-- **Source:** [Student Performance Factors — Kaggle](https://www.kaggle.com/datasets/lainguyn123/student-performance-factors)
+- **Source:** [Student Performance Factors - Kaggle](https://www.kaggle.com/datasets/lainguyn123/student-performance-factors)
 - **Size:** 6,607 rows × 20 columns
 - **Response (Y):** `Exam_Score`
 - **Predictors compared:** `Hours_Studied` vs. `Attendance`
@@ -45,11 +45,11 @@ The two numeric predictors with the highest correlation to `Exam_Score` were sel
 | F-critical (α = 0.05) | 3.8429 | 3.8429 |
 | Decision (H₀: β₁ = 0) | **Reject H₀** | **Reject H₀** |
 
-**Conclusion:** Both predictors are statistically significant, but `Attendance` is the superior predictor — it explains ~34% of the variance in exam scores (vs. ~20% for hours studied) and produces more than double the F-statistic.
+**Conclusion:** Both predictors are statistically significant, but `Attendance` is the superior predictor: it explains ~34% of the variance in exam scores (vs. ~20% for hours studied) and produces more than double the F-statistic.
 
 ## Verification Against statsmodels
 
-Every computed statistic is verified line-by-line against `statsmodels.OLS`. All 22 metrics (coefficients, SSE, SSR, MSE, F-stat, R², and CI bounds) match to **1e-6 precision** — every check **Passed**.
+Every computed statistic is verified line-by-line against `statsmodels.OLS`. All 22 metrics (coefficients, SSE, SSR, MSE, F-stat, R², and CI bounds) match to **1e-6 precision**, every check **Passed**.
 
 Example output:
 
@@ -114,7 +114,7 @@ Module-level function that fits two independent simple linear regressions agains
 
 ### Installation
 
-No requirements file needed — install the four dependencies directly:
+No requirements file needed. Install the four dependencies directly:
 
 ```bash
 pip install numpy scipy pandas statsmodels jupyter
